@@ -10,7 +10,6 @@ export const LayoutRoot = styled.section`
 
 export const RouterContainer = styled.section`
   min-height: 66rem;
-  padding-top: 6rem;
   width: 480px;
-  background-color: #f5f5f5;
+  background-color: #fefef1;
 `;
