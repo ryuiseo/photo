@@ -23,7 +23,6 @@ import {
   AccordionContainer,
   AccordionButton,
   AccordionContent,
-  AccordionText,
   BottomBox,
   AccountBox,
 } from "./styles";
