@@ -96,23 +96,12 @@ const Main = () => {
   return (
     <MainContainer>
       <MainImage src="/메인3고화질.png" />
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{
-          ease: "easeInOut",
-          duration: 2,
-          y: { duration: 1 },
-        }}
-      >
-        <MainText>
-          각자 다른 길을 걸어온 저희가
-          <br /> 부부의 연으로 한 길을 걸어가고자 합니다.
-          <br /> 한곳을 바라보며 첫 발을 떼는
-          <br /> 그 시작의 자리에 함께해 주시기 바랍니다.
-        </MainText>
-      </motion.div>
+      <MainText>
+        각자 다른 길을 걸어온 저희가
+        <br /> 부부의 연으로 한 길을 걸어가고자 합니다.
+        <br /> 한곳을 바라보며 첫 발을 떼는
+        <br /> 그 시작의 자리에 함께해 주시기 바랍니다.
+      </MainText>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -262,7 +251,6 @@ const Main = () => {
             <p style={{ fontSize: "0.8rem" }}>네이버지도</p>
           </div>
         </div>
-
         <MainText istext="true">
           지하철 : 수원시청역(수인분당) 2번 출구에서 도보 약 3분 소요
           <br />

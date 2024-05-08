@@ -10,7 +10,7 @@ export const MainImage = styled.img`
 
 export const MainText = styled.p`
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 3rem;
   font-size: 1rem;
   line-height: 3rem;
   ${(props) =>
@@ -53,7 +53,7 @@ export const CallButton = styled.button`
 export const CalendarImage = styled.img`
   width: 100%;
   height: 100%;
-  margin-top: 6rem;
+  margin-top: 1rem;
 `;
 
 export const DdayText = styled.p`
