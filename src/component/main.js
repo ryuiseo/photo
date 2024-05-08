@@ -4,11 +4,11 @@ import {
   Container as MapDiv,
   Marker,
 } from "react-naver-maps";
-import Slider from "react-slick";
 import CopyTextButton from "../functions/copybutton";
 import CopyAccountButton from "../functions/copyaccount";
 import { useState } from "react";
 import DDayCounter from "../functions/dday";
+import ImagesSlide from "./imageslide";
 import { images } from "../functions/images";
 import {
   MainContainer,
@@ -39,40 +39,20 @@ const Main = () => {
   const openModal = (clickedIndex) => {
     setCurrentImageIndex(clickedIndex);
     setModalOpen(true);
-    console.log("index", clickedIndex);
   };
 
   const closeModal = () => {
     setModalOpen(false);
   };
-  const Modal = ({ isOpen, onClose, openModal }) => {
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      adaptiveHeight: true,
-    };
-    if (!isOpen) return null;
+  const Modal = ({ isopen, onClose, openModal, currentImageIndex }) => {
+    if (!isopen) return null;
     return (
       <ModalContainer>
         <ModalContent>
-          <div
-            style={{ maxWidth: "450px", maxHeight: "auto", margin: "0 auto" }}
-          >
-            <Slider {...settings} initialSlide={currentImageIndex}>
-              {images.map((image, index) => (
-                <div key={image} onClick={() => openModal(index)}>
-                  <img
-                    style={{ width: "100%", height: "auto" }}
-                    src={images[index]}
-                    alt={index}
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
+          <ImagesSlide
+            openModal={openModal}
+            currentImageIndex={currentImageIndex}
+          />
           <CancelIcon
             onClick={onClose}
             style={{
@@ -312,7 +292,12 @@ const Main = () => {
             />
           ))}
         </Grid>
-        <Modal isOpen={modalOpen} onClose={closeModal} openModal={openModal} />
+        <Modal
+          isopen={modalOpen}
+          onClose={closeModal}
+          openModal={openModal}
+          currentImageIndex={currentImageIndex}
+        />
       </div>
       <MainText istext="true">
         이미지를 클릭하시면 확대보기가 가능합니다.
@@ -418,9 +403,7 @@ const Main = () => {
         </AccordionContainer>
       </motion.div>
       <BottomBox>
-        <CopyLink
-          text={"https://6639d3f7470e75b690c5abc9--jisoosoyeon.netlify.app/"}
-        />
+        <CopyLink text={"https://jisoosoyeon.netlify.app/"} />
       </BottomBox>
     </MainContainer>
   );

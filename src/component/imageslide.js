@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { images } from "../functions/images";
 
-const ImagesSlide = ({ openModal }) => {
+const ImagesSlide = ({ openModal, currentImageIndex }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -14,12 +14,12 @@ const ImagesSlide = ({ openModal }) => {
   };
   return (
     <div style={{ maxWidth: "450px", maxHeight: "auto", margin: "0 auto" }}>
-      <Slider {...settings}>
+      <Slider {...settings} initialSlide={currentImageIndex}>
         {images.map((image, index) => (
           <div key={image} onClick={() => openModal(index)}>
             <img
               style={{ width: "100%", height: "auto" }}
-              src={image}
+              src={images[index]}
               alt={index}
             />
           </div>
