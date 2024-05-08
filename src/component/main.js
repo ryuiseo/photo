@@ -9,7 +9,6 @@ import CopyTextButton from "../functions/copybutton";
 import CopyAccountButton from "../functions/copyaccount";
 import { useState } from "react";
 import DDayCounter from "../functions/dday";
-import ImagesSlide from "./imageslide";
 import { images } from "../functions/images";
 import {
   MainContainer,
@@ -240,6 +239,7 @@ const Main = () => {
                   cursor: "pointer",
                 }}
                 src={"/kakaomap_basic.png"}
+                alt="kakao"
                 onClick={() =>
                   window.open("https://place.map.kakao.com/m/78910847")
                 }
@@ -271,6 +271,7 @@ const Main = () => {
                   cursor: "pointer",
                 }}
                 src={"/naver_logo.webp"}
+                alt="naver"
                 onClick={() =>
                   window.open(
                     "https://map.naver.com/p/entry/place/1311070519?c=15.00,0,0,0,dh"
