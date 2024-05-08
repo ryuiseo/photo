@@ -1,15 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
-
-const slideUpAnimation = keyframes`
-  from {
-    transform: translateY(300px); /* 시작 위치 설정 */
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0); /* 목표 위치 설정 */
-    opacity: 1;
-  }
-`;
+import styled, { css } from "styled-components";
 
 export const MainContainer = styled.section`
   margin: 0 auto;
@@ -28,7 +17,6 @@ export const MainText = styled.p`
     props.isnormal === "true" &&
     css`
       margin-top: -1rem;
-      animation: ${slideUpAnimation} 0.5s ease-in-out;
     `};
   ${(props) =>
     props.issub === "true" &&
@@ -36,7 +24,12 @@ export const MainText = styled.p`
       color: #9a9a9a;
       margin-top: -2rem;
     `};
-
+  ${(props) =>
+    props.istext === "true" &&
+    css`
+      margin-top: 2rem;
+      font-size: 0.8rem;
+    `};
   font-family: "Noto Serif KR";
 `;
 
@@ -72,7 +65,7 @@ export const DdayText = styled.p`
 // 그리드 스타일드 컴포넌트
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 `;
 
@@ -97,13 +90,14 @@ export const ModalContainer = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  background-color: white;
-  padding: 20px;
+  background-color: transparent;
+  display: block;
+  position: relative;
 `;
 
 export const ModalImage = styled.img`
   max-width: 100%;
-  max-height: 80vh;
+  max-height: 85vh;
 `;
 
 export const AccordionContainer = styled.div`

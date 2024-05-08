@@ -20,6 +20,7 @@ const CopyTextButton = ({ text }) => {
         backgroundColor: "transparent",
         border: "1px solid #929090",
         cursor: "pointer",
+        color: "black",
       }}
       onClick={copyToClipboard}
     >
