@@ -95,7 +95,7 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <MainImage src="/메인3문구수정.png" />
+      <MainImage src="/메인3고화질.png" />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
