@@ -95,7 +95,7 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <MainImage src="/메인3수정.webp" />
+      <MainImage src="/메인3문구수정.png" />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -403,7 +403,7 @@ const Main = () => {
         </AccordionContainer>
       </motion.div>
       <BottomBox>
-        <CopyLink text={"https://jisoosoyeon.netlify.app/"} />
+        <CopyLink text={"https://jisusoyeon.netlify.app/"} />
       </BottomBox>
     </MainContainer>
   );
