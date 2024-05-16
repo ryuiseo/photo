@@ -4,6 +4,7 @@ import {
   Container as MapDiv,
   Marker,
 } from "react-naver-maps";
+import { useEffect } from "react";
 import CopyTextButton from "../functions/copybutton";
 import CopyAccountButton from "../functions/copyaccount";
 import { useState } from "react";
@@ -44,6 +45,30 @@ const Main = () => {
   const closeModal = () => {
     setModalOpen(false);
   };
+
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modalOpen]);
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modalOpen]);
+
   const Modal = ({ isopen, onClose, openModal, currentImageIndex }) => {
     if (!isopen) return null;
     return (
