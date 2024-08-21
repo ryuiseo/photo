@@ -120,7 +120,7 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <MainImage src="/rsw1.png" />
+      <MainImage src="./rsw1.png" />
       <MainText>
         설레는 마음으로 처음 서로의 손을
         <br /> 잡았던 때가 기억납니다.
@@ -156,7 +156,7 @@ const Main = () => {
           y: { duration: 1 },
         }}
       >
-        <CalendarImage src="/calendar.png" />
+        <CalendarImage src="./calendar.png" />
         <DdayText>
           <DDayCounter />
         </DdayText>
@@ -232,7 +232,7 @@ const Main = () => {
                   objectFit: "cover",
                   cursor: "pointer",
                 }}
-                src={"/kakaomap_basic.png"}
+                src={"./kakaomap_basic.png"}
                 alt="kakao"
                 onClick={() =>
                   window.open("https://place.map.kakao.com/m/18152810")
@@ -264,7 +264,7 @@ const Main = () => {
                   objectFit: "cover",
                   cursor: "pointer",
                 }}
-                src={"/naver_logo.webp"}
+                src={"./naver_logo.webp"}
                 alt="naver"
                 onClick={() =>
                   window.open(
