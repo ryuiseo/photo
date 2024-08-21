@@ -120,12 +120,14 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <MainImage src="/메인3고화질.png" />
+      <MainImage src="/rsw1.png" />
       <MainText>
-        각자 다른 길을 걸어온 저희가
-        <br /> 부부의 연으로 한 길을 걸어가고자 합니다.
-        <br /> 한곳을 바라보며 첫 발을 떼는
-        <br /> 그 시작의 자리에 함께해 주시기 바랍니다.
+        설레는 마음으로 처음 서로의 손을
+        <br /> 잡았던 때가 기억납니다.
+        <br /> 함께하는 시간 동안 더 깊어진 마음으로
+        <br /> 다시 한번 서로의 손을 더 단단히 잡으려 합니다.
+        <br /> 저희의 아름다운 시작에
+        <br /> 소중한 축복으로 함께해 주시기 바랍니다.
       </MainText>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -138,10 +140,10 @@ const Main = () => {
         }}
       >
         <MainText>
-          정영석 · 한경림<NameText> 의 차남 </NameText> 지수
+          심상곤 · 조분선<NameText> 의 장남 </NameText> 찬섭
         </MainText>
         <MainText isnormal="true">
-          김석구 · 김성숙<NameText> 의 장녀 </NameText> 소연
+          류연하 · 오승희<NameText> 의 장녀 </NameText> 선우
         </MainText>
       </motion.div>
       <motion.div
@@ -154,7 +156,7 @@ const Main = () => {
           y: { duration: 1 },
         }}
       >
-        <CalendarImage src="/달력수정.png" />
+        <CalendarImage src="/calendar.png" />
         <DdayText>
           <DDayCounter />
         </DdayText>
@@ -170,11 +172,9 @@ const Main = () => {
         }}
       >
         <MainText>오시는 길</MainText>
-        <MainText isnormal="true">
-          이비스 앰버서더 수원 15층 베르사이유 홀
-        </MainText>
+        <MainText isnormal="true">파티웨딩유 1층, 2층 아모르홀</MainText>
         <TextWithCopyButton
-          text={"경기도 수원시 팔달구 권광로 132"}
+          text={"경기도 수원시 권선구 세화로 218"}
         ></TextWithCopyButton>
         <NavermapsProvider
           ncpClientId={"3gurptape5"}
@@ -190,12 +190,12 @@ const Main = () => {
             }}
           >
             <NaverMap
-              defaultCenter={{ lat: 37.259311, lng: 127.03134 }} // 지도 초기 위치
+              defaultCenter={{ lat: 37.2716756, lng: 126.9953294 }} // 지도 초기 위치
               defaultZoom={17} // 지도 초기 확대 배율
             >
               <Marker
                 key={1}
-                position={new navermaps.LatLng(37.259311, 127.03134)}
+                position={new navermaps.LatLng(37.2716756, 126.9953294)}
               />
             </NaverMap>
           </MapDiv>
@@ -235,7 +235,7 @@ const Main = () => {
                 src={"/kakaomap_basic.png"}
                 alt="kakao"
                 onClick={() =>
-                  window.open("https://place.map.kakao.com/m/78910847")
+                  window.open("https://place.map.kakao.com/m/18152810")
                 }
               />
             </div>
@@ -268,7 +268,7 @@ const Main = () => {
                 alt="naver"
                 onClick={() =>
                   window.open(
-                    "https://map.naver.com/p/entry/place/1311070519?c=15.00,0,0,0,dh"
+                    "https://map.naver.com/p/entry/place/13103771?c=15.00,0,0,0,dh"
                   )
                 }
               />
@@ -277,9 +277,7 @@ const Main = () => {
           </div>
         </div>
         <MainText istext="true">
-          지하철 : 수원시청역(수인분당) 2번 출구에서 도보 약 3분 소요
-          <br />
-          주차장이 협소하오니 대중교통 이용해주시면 감사드리겠습니다.
+          지하철 : 수원역(1호선) 4번 출구에서 도보 약 13분 소요
         </MainText>
       </motion.div>
       <motion.div
@@ -368,7 +366,7 @@ const Main = () => {
                   text={"228002-04-123994"}
                 ></AccountCopyButton>
               </div>
-              <div>정지수</div>
+              <div>심찬섭</div>
             </AccountBox>
           </AccordionContent>
         </AccordionContainer>
@@ -383,10 +381,12 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                국민은행 | 294-240-003-335{" "}
-                <AccountCopyButton text={"294-240-003-335"}></AccountCopyButton>{" "}
+                기업은행 | 345-090069-01-015{" "}
+                <AccountCopyButton
+                  text={"345-090069-01-015"}
+                ></AccountCopyButton>{" "}
               </div>
-              <div>김석구</div>
+              <div>류연하</div>
             </AccountBox>
             <AccountBox>
               <div
@@ -394,12 +394,12 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                국민은행 | 172602-04-039718{" "}
+                농협은행 | 201011-52-060720{" "}
                 <AccountCopyButton
-                  text={"172602-04-039718"}
+                  text={"201011-52-060720"}
                 ></AccountCopyButton>{" "}
               </div>
-              <div>김성숙</div>
+              <div>오승희</div>
             </AccountBox>
             <AccountBox>
               <div
@@ -410,7 +410,7 @@ const Main = () => {
                 신한은행 | 110-412-389583
                 <AccountCopyButton text={"110-412-389583"} />
               </div>
-              <div>김소연</div>
+              <div>류선우</div>
             </AccountBox>
           </AccordionContent>
         </AccordionContainer>
