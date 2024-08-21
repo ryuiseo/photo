@@ -335,12 +335,9 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                기업은행 | 378-014420-01-017{" "}
-                <AccountCopyButton
-                  text={"378-014420-01-017"}
-                ></AccountCopyButton>{" "}
+                은행 | <AccountCopyButton text={"1111"}></AccountCopyButton>{" "}
               </div>
-              <div>정영석</div>
+              <div>심상곤</div>
             </AccountBox>
             <AccountBox>
               <div
@@ -348,12 +345,9 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                우체국 | 104943-02-045355{" "}
-                <AccountCopyButton
-                  text={"104943-02-045355"}
-                ></AccountCopyButton>
+                은행 | <AccountCopyButton text={"1111"}></AccountCopyButton>
               </div>
-              <div>한경림</div>
+              <div>조분선</div>
             </AccountBox>
             <AccountBox>
               <div
@@ -361,10 +355,7 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                국민은행 | 228002-04-123994{" "}
-                <AccountCopyButton
-                  text={"228002-04-123994"}
-                ></AccountCopyButton>
+                은행 | <AccountCopyButton text={"1111"}></AccountCopyButton>
               </div>
               <div>심찬섭</div>
             </AccountBox>
@@ -416,7 +407,7 @@ const Main = () => {
         </AccordionContainer>
       </motion.div>
       <BottomBox>
-        <CopyLink text={"https://jisusoyeon.netlify.app/"} />
+        <CopyLink text={"https://scsrsw.netlify.app/"} />
       </BottomBox>
     </MainContainer>
   );
