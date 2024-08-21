@@ -407,7 +407,7 @@ const Main = () => {
         </AccordionContainer>
       </motion.div>
       <BottomBox>
-        <CopyLink text={"https://scsrsw.netlify.app/"} />
+        <CopyLink text={"https://ryuiseo.github.io/inviteCard2/"} />
       </BottomBox>
     </MainContainer>
   );
