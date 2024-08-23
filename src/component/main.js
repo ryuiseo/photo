@@ -277,16 +277,14 @@ const Main = () => {
           </div>
         </div>
         <MainText istext="true">
-          찾아오시는길
+          <p style={{ fontSize: "1rem" }}>찾아오시는길</p>
+          <span style={{ color: "hotpink" }}> 지하철 이용시</span>
           <br />
-          자가용 이용시 - 네비게이션에 파티웨딩유로 검색
+          1호선, 수인분당선 수원역하차
           <br />
-          주소 : 경기 수원시 권선구 세화로 218 또는 경기 수원시 권선구 서둔동
-          9-16 입력
+          <span style={{ color: "hotpink" }}> 셔틀버스 이용시</span>
           <br />
-          지하철 이용시 - 1호선, 수인분당선 수원역하차
-          <br />
-          셔틀버스 이용시 - 수원역 지하상가 13번 출구방향 리무진 버스정류장
+          수원역 지하상가 13번 출구방향 리무진 버스정류장
         </MainText>
       </motion.div>
       <motion.div
