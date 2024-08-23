@@ -278,6 +278,10 @@ const Main = () => {
         </div>
         <MainText istext="true">
           <p style={{ fontSize: "1rem" }}>찾아오시는길</p>
+          <span style={{ color: "hotpink" }}> 자가용 이용시</span>
+          <br />
+          네비게이션에 파티웨딩유 검색
+          <br />
           <span style={{ color: "hotpink" }}> 지하철 이용시</span>
           <br />
           1호선, 수인분당선 수원역하차
