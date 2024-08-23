@@ -172,7 +172,7 @@ const Main = () => {
         }}
       >
         <MainText>오시는 길</MainText>
-        <MainText isnormal="true">파티웨딩유 1층, 2층 아모르홀</MainText>
+        <MainText isnormal="true">파티웨딩유 2층 아모르홀</MainText>
         <TextWithCopyButton
           text={"경기도 수원시 권선구 세화로 218"}
         ></TextWithCopyButton>
@@ -277,7 +277,16 @@ const Main = () => {
           </div>
         </div>
         <MainText istext="true">
-          지하철 : 수원역(1호선) 4번 출구에서 도보 약 13분 소요
+          찾아오시는길
+          <br />
+          자가용 이용시 - 네비게이션에 파티웨딩유로 검색
+          <br />
+          주소 : 경기 수원시 권선구 세화로 218 또는 경기 수원시 권선구 서둔동
+          9-16 입력
+          <br />
+          지하철 이용시 - 1호선, 수인분당선 수원역하차
+          <br />
+          셔틀버스 이용시 - 수원역 지하상가 13번 출구방향 리무진 버스정류장
         </MainText>
       </motion.div>
       <motion.div
@@ -335,7 +344,10 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                은행 | <AccountCopyButton text={"1111"}></AccountCopyButton>{" "}
+                국민은행 | 210-21–0524-872
+                <AccountCopyButton
+                  text={"210-21–0524-872"}
+                ></AccountCopyButton>{" "}
               </div>
               <div>심상곤</div>
             </AccountBox>
@@ -345,17 +357,8 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                은행 | <AccountCopyButton text={"1111"}></AccountCopyButton>
-              </div>
-              <div>조분선</div>
-            </AccountBox>
-            <AccountBox>
-              <div
-                style={{
-                  display: "flex",
-                }}
-              >
-                은행 | <AccountCopyButton text={"1111"}></AccountCopyButton>
+                우리은행 | 1002-143-794205
+                <AccountCopyButton text={"1002-143-794205"}></AccountCopyButton>
               </div>
               <div>심찬섭</div>
             </AccountBox>
@@ -385,21 +388,8 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                농협은행 | 201011-52-060720{" "}
-                <AccountCopyButton
-                  text={"201011-52-060720"}
-                ></AccountCopyButton>{" "}
-              </div>
-              <div>오승희</div>
-            </AccountBox>
-            <AccountBox>
-              <div
-                style={{
-                  display: "flex",
-                }}
-              >
-                신한은행 | 110-412-389583
-                <AccountCopyButton text={"110-412-389583"} />
+                기업은행 | 503-052602-01-013
+                <AccountCopyButton text={"503-052602-01-013"} />
               </div>
               <div>류선우</div>
             </AccountBox>
