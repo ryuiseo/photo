@@ -109,7 +109,7 @@ export const AccordionContainer = styled.div`
 export const AccordionButton = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: #e0d6ca;
+  background-color: #c1d898;
   color: #505050;
   border: none;
   cursor: pointer;
@@ -138,7 +138,7 @@ export const AccordionText = styled.p`
 
 export const BottomBox = styled.div`
   margin-top: 6rem;
-  background-color: #e0d6ca;
+  background-color: #c1d898;
   width: 100%;
   height: 8rem;
   display: flex;

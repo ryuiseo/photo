@@ -4,7 +4,7 @@ const DDayCounter = () => {
   const [dDay, setDDay] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date("2024-11-09");
+    const targetDate = new Date("2025-09-20");
     const today = new Date();
 
     const timeDiff = targetDate.getTime() - today.getTime();
@@ -15,8 +15,9 @@ const DDayCounter = () => {
 
   return (
     <div>
-      찬섭 <span style={{ color: "#FF9C9C" }}>♥</span> 선우의 결혼식이{" "}
-      <span style={{ color: "#FF9C9C" }}>{dDay}일</span> 남았습니다.
+      한건 <span style={{ color: "#7BBD00" }}>♥</span> 채영의 결혼식이{" "}
+      <span style={{ color: "#7BBD00", fontWeight: "bold" }}>{dDay}일</span>{" "}
+      남았습니다.
     </div>
   );
 };

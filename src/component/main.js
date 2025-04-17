@@ -120,7 +120,12 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <MainImage src="./rsw1.png" />
+      <MainImage src="/rsw1.png" />
+      <MainText style={{ marginBottom: "5rem" }}>
+        이한건 | 김채영 <br />
+        2025년 9월 20일 토요일 오후 12시 30분 <br />
+        더빅토리아웨딩파티 9층 하늘정원홀
+      </MainText>
       <MainText>
         설레는 마음으로 처음 서로의 손을
         <br /> 잡았던 때가 기억납니다.
@@ -140,10 +145,10 @@ const Main = () => {
         }}
       >
         <MainText>
-          심상곤 · 조분선<NameText> 의 장남 </NameText> 찬섭
+          이수광 · 배영선<NameText> 의 장남 </NameText> 이한건
         </MainText>
         <MainText isnormal="true">
-          류연하 · 오승희<NameText> 의 장녀 </NameText> 선우
+          김필영 · 서정은<NameText> 의 차녀 </NameText> 김채영
         </MainText>
       </motion.div>
       <motion.div
@@ -156,7 +161,7 @@ const Main = () => {
           y: { duration: 1 },
         }}
       >
-        <CalendarImage src="./calendar.png" />
+        <CalendarImage src="/calendar.png" />
         <DdayText>
           <DDayCounter />
         </DdayText>
@@ -172,9 +177,9 @@ const Main = () => {
         }}
       >
         <MainText>오시는 길</MainText>
-        <MainText isnormal="true">파티웨딩유 2층 아모르홀</MainText>
+        <MainText isnormal="true">더 빅토리아웨딩파티 9층 하늘정원홀</MainText>
         <TextWithCopyButton
-          text={"경기도 수원시 권선구 세화로 218"}
+          text={"서울 강북구 도봉로 16 더 빅토리아웨딩파티"}
         ></TextWithCopyButton>
         <NavermapsProvider
           ncpClientId={"3gurptape5"}
@@ -190,12 +195,12 @@ const Main = () => {
             }}
           >
             <NaverMap
-              defaultCenter={{ lat: 37.2716756, lng: 126.9953294 }} // 지도 초기 위치
+              defaultCenter={{ lat: 37.6106397, lng: 127.0308369 }} // 지도 초기 위치
               defaultZoom={17} // 지도 초기 확대 배율
             >
               <Marker
                 key={1}
-                position={new navermaps.LatLng(37.2716756, 126.9953294)}
+                position={new navermaps.LatLng(37.6106397, 127.0308369)}
               />
             </NaverMap>
           </MapDiv>
@@ -232,10 +237,10 @@ const Main = () => {
                   objectFit: "cover",
                   cursor: "pointer",
                 }}
-                src={"./kakaomap_basic.png"}
+                src={"/kakaomap_basic.png"}
                 alt="kakao"
                 onClick={() =>
-                  window.open("https://place.map.kakao.com/m/18152810")
+                  window.open("https://place.map.kakao.com/299787545")
                 }
               />
             </div>
@@ -266,11 +271,7 @@ const Main = () => {
                 }}
                 src={"./naver_logo.webp"}
                 alt="naver"
-                onClick={() =>
-                  window.open(
-                    "https://map.naver.com/p/entry/place/13103771?c=15.00,0,0,0,dh"
-                  )
-                }
+                onClick={() => window.open("https://naver.me/5chuSHkG")}
               />
             </div>
             <p style={{ fontSize: "0.8rem" }}>네이버지도</p>
@@ -278,17 +279,55 @@ const Main = () => {
         </div>
         <MainText istext="true">
           <p style={{ fontSize: "1rem" }}>찾아오시는길</p>
-          <span style={{ color: "hotpink" }}> 자가용 이용시</span>
+          <span
+            style={{
+              color: "#7BBD00",
+              fontSize: "1rem",
+              fontWeight: "bold",
+            }}
+          >
+            {" "}
+            자가용 이용시
+          </span>
           <br />
-          네비게이션에 파티웨딩유 검색
+          건물 내 2,3,4층 주차 2시간 무료
           <br />
-          <span style={{ color: "hotpink" }}> 지하철 이용시</span>
+          <span
+            style={{
+              color: "#7BBD00",
+              fontSize: "1rem",
+              fontWeight: "bold",
+            }}
+          >
+            지하철 이용시
+          </span>
           <br />
-          1호선, 수인분당선 수원역하차
+          [4호선] 미아사거리역 3번 출구 도보 3분
           <br />
-          <span style={{ color: "hotpink" }}> 셔틀버스 이용시</span>
+          <span
+            style={{
+              color: "#7BBD00",
+              fontSize: "1rem",
+              fontWeight: "bold",
+            }}
+          >
+            {" "}
+            버스 이용시
+          </span>
           <br />
-          수원역 지하상가 13번 출구방향 리무진 버스정류장
+          미아사거리역 하차 <br />{" "}
+          <span style={{ fontWeight: "bold" }}>[간선]</span> 101, 102, 106, 107,
+          108, 120, 130,
+          <br />
+          140, 141, 142, 144, 148, 150, 151, 153,
+          <br />
+          160, 710, N15, N16 <br />
+          <span style={{ fontWeight: "bold" }}> [지선]</span> 1124, 1128, 1137,
+          1165 , 8111
+          <br />
+          <span style={{ fontWeight: "bold" }}>[공항]</span> 6101
+          <br />
+          <span style={{ fontWeight: "bold" }}>[마을]</span> 강북09, 강북11
         </MainText>
       </motion.div>
       <motion.div
@@ -346,12 +385,12 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                국민은행 | 210-21–0524-872
+                농협 | 109-12-293781
                 <AccountCopyButton
-                  text={"210-21–0524-872"}
+                  text={"109-12-293781"}
                 ></AccountCopyButton>{" "}
               </div>
-              <div>심상곤</div>
+              <div>이수광</div>
             </AccountBox>
             <AccountBox>
               <div
@@ -359,10 +398,10 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                우리은행 | 1002-143-794205
-                <AccountCopyButton text={"1002-143-794205"}></AccountCopyButton>
+                우리은행 | 1002-053-351200
+                <AccountCopyButton text={"1002-053-351200"}></AccountCopyButton>
               </div>
-              <div>심찬섭</div>
+              <div>이한건</div>
             </AccountBox>
           </AccordionContent>
         </AccordionContainer>
@@ -377,12 +416,12 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                기업은행 | 345-090069-01-015{" "}
+                국민은행 | 204201-04-440153{" "}
                 <AccountCopyButton
-                  text={"345-090069-01-015"}
+                  text={"204201-04-440153"}
                 ></AccountCopyButton>{" "}
               </div>
-              <div>류연하</div>
+              <div>김필영</div>
             </AccountBox>
             <AccountBox>
               <div
@@ -390,16 +429,16 @@ const Main = () => {
                   display: "flex",
                 }}
               >
-                기업은행 | 503-052602-01-013
-                <AccountCopyButton text={"503-052602-01-013"} />
+                신한은행 | 110-501-088359
+                <AccountCopyButton text={"110-501-088359"} />
               </div>
-              <div>류선우</div>
+              <div>김채영</div>
             </AccountBox>
           </AccordionContent>
         </AccordionContainer>
       </motion.div>
       <BottomBox>
-        <CopyLink text={"https://ryuiseo.github.io/inviteCard2/"} />
+        <CopyLink text={"https://ryuiseo.github.io/inviteCard3/"} />
       </BottomBox>
     </MainContainer>
   );
