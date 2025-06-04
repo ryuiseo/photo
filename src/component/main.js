@@ -78,7 +78,7 @@ const Main = () => {
       <MainText style={{ marginBottom: '5rem' }}>
         홍경표 | 류이서 <br />
         저희 두 사람이 결혼하게 되었습니다.
-        <br /> 앞으로도 저희 두 사람의 앞날을
+        <br /> 앞으로 저희가 걸어갈 앞날을
         <br /> 따듯하게 지켜봐주세요.
         <br />
       </MainText>
