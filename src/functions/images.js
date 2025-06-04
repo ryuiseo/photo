@@ -11,7 +11,7 @@ export const images = [
   './ki10.webp',
   './ki11.webp',
   './ki12.webp',
-  './ki13.webp',
+  './ki113.webp',
   './ki15.webp',
   './ki16.webp',
   './ki17.webp',
