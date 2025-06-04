@@ -84,6 +84,9 @@ const Main = () => {
         <br />
       </MainText>
       <MainText>갤러리</MainText>
+      <MainText istext="true">
+        이미지를 클릭하시면 확대보기가 가능합니다.
+      </MainText>
       <div>
         <Grid>
           {images.map((image, index) => (
@@ -102,9 +105,6 @@ const Main = () => {
           currentImageIndex={currentImageIndex}
         />
       </div>
-      <MainText istext="true">
-        이미지를 클릭하시면 확대보기가 가능합니다.
-      </MainText>
     </MainContainer>
   );
 };
